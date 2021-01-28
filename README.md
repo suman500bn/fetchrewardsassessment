@@ -10,6 +10,7 @@ npm install
 
 # Run the app
 npm start
+
 node server.js
 
 # Run unit tests
