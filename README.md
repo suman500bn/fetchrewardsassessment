@@ -45,11 +45,8 @@ curl --location --request POST 'http://localhost:8000/v1/addpoints' \
 
 ### Request
 
-curl --location --request DELETE 'http://localhost:8000/points/deletepoints' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "points_to_deduct": 5000
-}'
+curl --location --request DELETE 'http://localhost:8000/v1/deletepoints/5000' \
+--header 'Content-Type: application/json' 
 
 ### Response
 
