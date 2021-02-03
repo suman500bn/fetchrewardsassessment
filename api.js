@@ -33,7 +33,9 @@ function date_time(string){
         }
     }
 
-    var d = new Date(2020, month1, day1, hour1);
+    date = new Date()
+    datestring = String(date.getFullYear()) +'-'+ String(month1)+'-'+String(day1)+' '+String(hour1)+':'+'00'
+    var d = new Date(datestring);
     return d
 
     
