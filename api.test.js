@@ -55,16 +55,16 @@ describe('POST /v1/addpoints', () => {
 
 });
 
-describe('DELETE /points/deletepoints', () => {
+describe('DELETE /v1/deletepoints', () => {
         it('delete points from users',async() => {
-                const res = await (await request(app).delete("/v1/deletepoints/5000"))
+                const res = await request(app).delete("/v1/deletepoints/5000")
                 expect(res.statusCode).toBe(200)
         })
 })
 
-describe('GET /points/balance', () => {
+describe('GET /v1/balance', () => {
         it('get user account balance',async() => {
-                const res = await (await request(app).get("/v1/balance"))
+                const res = await request(app).get("/v1/balance")
                 expect(res.statusCode).toBe(200)
         })
 })
